@@ -8,7 +8,7 @@ dark blue theme for Roam Research
   --green: #32e49b;
   --orange: #ffb86c;
   --pink: #ff79c6;
-  --purple: #bd93f9;
+  --purple: #d1b1ff;
   --red: #ff5555;
   --yellow: #f1fa8c;
 
@@ -17,7 +17,9 @@ dark blue theme for Roam Research
   --foreground: #f8f8f2;
   --comment: #6272a4;
 
-  --dark-blue: #29454b;
+  --dark-blue: #314975;
+  --light-blue: #cce7f7;
+  --dark-green: #2a5d48;
   --dark-yellow: #606438;
   --background2: #333545;
   --background-side: #11151c7a;
@@ -52,7 +54,7 @@ body {
 }
 
 .roam-body .roam-app h1 {
-  color: var(--blue);
+  color: var(--light-blue);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: bold;
@@ -125,8 +127,8 @@ body {
 }
 
 .rm-multibar {
-  border-color: var(--green);
-  opacity: 0.5;
+  border-color: var(--light-blue);
+  opacity: 0.3;
 }
 
 /* Button */
@@ -185,7 +187,7 @@ body {
 
 /* Highlights */
 
-.roam-highlight {
+.rm-highlight {
   background-color: var(--dark-yellow);
 }
 
@@ -208,7 +210,16 @@ body {
 }
 
 .bp3-toast.bp3-intent-warning {
-  background-color: var(--orange);
+  background-color: var(--yellow);
+  color: var(--background);
+}
+
+.bp3-toast.bp3-intent-warning .bp3-button {
+  color: var(--background) !important;
+}
+
+.bp3-toast.bp3-intent-warning .bp3-button .bp3-icon {
+  color: var(--background) !important;
 }
 
 /* Sync icon */
@@ -355,7 +366,7 @@ a:hover {
 }
 
 .bp3-control.bp3-checkbox input:checked ~ .bp3-control-indicator {
-  background-color: var(--dark-yellow);
+  background-color: var(--dark-blue);
 }
 
 /* Mentions in All Pages */
@@ -392,8 +403,8 @@ a:hover {
 /* Find or Create Page search box */
 
 .bp3-input {
-  background-color: var(--search-input);
-  color: var(--background);
+  background-color: var(--search-input-opacity);
+  color: var(--foreground);
 }
 
 .bp3-menu {
@@ -517,7 +528,7 @@ a:hover {
 }
 
 .check-container input:checked ~ .checkmark {
-  background-color: var(--dark-yellow);
+  background-color: var(--dark-blue);
 }
 
 /* Sliders */
